@@ -1,0 +1,113 @@
+.footer
+  background-color: #f4f4f4
+
+.footer-wrapper
+  display: grid
+  min-height: 151px
+  grid-template: max-content max-content / 1fr 1fr
+  @media screen and ( max-width: $tablet-width )
+    grid-template: min-content / 1fr
+
+.footer__menu
+  max-width: 442px
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 36px 0 20px 0
+  @media screen and ( max-width: $container-width )
+    max-width: 324px
+  @media screen and ( max-width: $tablet-width )
+    max-width: 100%
+    margin-top: 24px
+
+.footer-menu-item__link
+  color: #333333
+  padding-top: 6px
+  padding-bottom: 6px
+  @media screen and ( max-width: $tablet-width )
+    font-size: 14px
+
+.footer__list-contacts
+  width: 344px
+  display: flex
+  justify-content: space-between
+  justify-self: end
+  margin-top: 36px
+  @media screen and ( max-width: $container-width )
+    width: 307px
+    grid-column: 1/2
+    justify-self: start
+    margin-top: 0px
+  @media screen and ( max-width: $tablet-width )
+    width: 100%
+    flex-direction: column
+
+.footer-list-contacts-item__link
+  color: #333333
+  background-repeat: no-repeat
+  background-position: 0 50%
+  padding-top: 6px
+  padding-bottom: 6px
+  @media screen and ( max-width: $tablet-width )
+    display: inline-block
+    font-size: 14px
+    background-size: 18px
+
+.footer-list-contacts-item__link--tel
+  padding-left: 29px
+  background-image: url(../img/footer/tel.svg)
+  background-repeat: no-repeat
+  @media screen and ( max-width: $tablet-width )
+    padding-left: 28px
+  
+
+.footer-list-contacts-item__link--mail
+  padding-left: 35px
+  background-image: url(../img/footer/mail.svg)
+  @media screen and ( max-width: $tablet-width )
+    padding-left: 28px
+
+.footer__list-social
+  display: flex
+  grid-column: 2 / 3
+  align-self: end
+  justify-self: end
+  margin-top: 14px
+  margin-bottom: 14px
+  @media screen and ( max-width: $container-width )
+    margin-top: 34px
+    margin-bottom: 0px
+    grid-row: 1/2
+  @media screen and ( max-width: $tablet-width )
+    grid-column: auto
+    grid-row: auto
+    justify-self: start
+    margin-top: 10px
+  
+
+  
+
+.footer-list-social__item
+  margin-left: 12px
+  @media screen and ( max-width: $tablet-width )
+    margin-left: 0
+    margin-right: 12px
+
+.footer-list-social-item__img
+  @media screen and ( max-width: $tablet-width )
+    width: 30px
+    height: 30px
+
+.copy
+  font-size: 14px
+  color: #8D8D8D
+  display: inline-block
+  margin: 28px 0
+  grid-column: 1 / 2
+  grid-row: 2 / 3
+  @media screen and ( max-width: $container-width )
+    grid-row: auto
+  @media screen and ( max-width: $tablet-width )
+    font-size: 12px
+    margin: 24px 0
+
