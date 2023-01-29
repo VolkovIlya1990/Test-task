@@ -1,0 +1,37 @@
+.promo
+  margin-bottom: 96px
+  @media screen and ( max-width: $container-width )
+    margin-bottom: 73px
+  @media screen and ( max-width: $tablet-width )
+    margin-bottom: 48px
+
+.promo__title
+  font-weight: 700
+  font-size: 36px
+  margin: 36px 0
+  display: block
+  @media screen and ( max-width: $tablet-width )
+    margin: 24px 0
+    font-size: 24px
+
+.promo__list
+  display: flex
+  flex-wrap: wrap
+  gap: 33.5px
+  justify-content: space-between
+  @media screen and ( max-width: $container-width )
+    gap: 18px
+
+.promo-list__item
+  @media screen and ( max-width: $tablet-width )
+    min-width: 100%
+
+.promo-list__img
+  width: 361px
+  height: auto
+  box-shadow: 0px 6px 30px 4px rgba(32, 32, 32, 0.1)
+  border-radius: 10px
+  @media screen and ( max-width: $container-width )
+    width: 355px
+  @media screen and ( max-width: $tablet-width )
+    width: 100%
